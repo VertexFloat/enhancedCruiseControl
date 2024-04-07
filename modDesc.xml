@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="79">
+  <author>VertexFloat</author>
+  <version>1.0.0.0</version>
+  <title>
+    <en>MOD_TITLE</en>
+    <de>MOD_TITLE</de>
+    <fr>MOD_TITLE</fr>
+    <pl>MOD_TITLE</pl>
+  </title>
+  <description>
+    <en><![CDATA[
+For more information, full changelog, help or to report a bug, please visit <a href="https://github.com/VertexFloat/MOD_NAME">GitHub</a>.]]></en>
+    <de><![CDATA[
+Weitere Informationen, ein vollständiges Änderungsprotokoll, Hilfe oder die Möglichkeit, einen Fehler zu melden, finden Sie unter <a href="https://github.com/VertexFloat/MOD_NAME">GitHub</a>.]]></de>
+    <fr><![CDATA[
+Pour plus d'informations, le journal des modifications complet, de l'aide ou pour signaler un bug, veuillez visiter <a href="https://github.com/VertexFloat/MOD_NAME">GitHub</a>.]]></fr>
+    <pl><![CDATA[
+Po więcej informacji, pełny dziennik zmian, pomoc lub zgłoszenie błędu, odwiedź stronę <a href="https://github.com/VertexFloat/MOD_NAME">GitHub</a>.]]></pl>
+  </description>
+  <iconFilename>icon_MOD_NAME.png</iconFilename>
+  <multiplayer supported="true"/>
+
+  <l10n>
+    <text name="">
+      <en></en>
+      <de></de>
+      <fr></fr>
+      <pl></pl>
+    </text>
+  </l10n>
+
+  <storeItems>
+    <storeItem xmlFilename="STORE_XML_PATH"/>
+  </storeItems>
+
+  <extraSourceFiles>
+    <sourceFile filename="LUA_PATH"/>
+  </extraSourceFiles>
+</modDesc>
