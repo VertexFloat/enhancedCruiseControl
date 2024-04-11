@@ -23,7 +23,7 @@ end
 
 function SetSmartCruiseControlModeEvent:readStream(streamId, connection)
   self.vehicle = NetworkUtil.readNodeObject(streamId)
-  self.state = streamReadUIntN(streamId, 2)
+  self.state = streamReadUIntN(streamId, EnhancedCruiseControl.SEND_NUM_BITS)
 
   self:run(connection)
 end
@@ -31,21 +31,21 @@ end
 function SetSmartCruiseControlModeEvent:writeStream(streamId, connection)
   NetworkUtil.writeNodeObject(streamId, self.vehicle)
 
-  streamWriteUIntN(streamId, self.state, 2)
+  streamWriteUIntN(streamId, self.state, EnhancedCruiseControl.SEND_NUM_BITS)
 end
 
 function SetSmartCruiseControlModeEvent:run(connection)
-  if self.vehicle ~= nil and self.vehicle:getIsSynchronized() then
-    self.vehicle:setSmartCruiseControlMode(self.state, true)
+  if not connection:getIsServer() then
+    g_server:broadcastEvent(self, false, connection, self.vehicle)
   end
 
-  if not connection:getIsServer() then
-    g_server:broadcastEvent(SetSmartCruiseControlModeEvent.new(self.vehicle, self.state), nil, connection, self.vehicle)
+  if self.vehicle ~= nil and self.vehicle:getIsSynchronized() then
+    self.vehicle:setSmartCruiseControlMode(self.state, true)
   end
 end
 
 function SetSmartCruiseControlModeEvent.sendEvent(vehicle, state, noEventSend)
-  if noEventSend == nil or noEventSend == false then
+  if vehicle.spec_enhancedCruiseControl.currentSmartCruiseControlMode ~= state and (noEventSend == nil or noEventSend == false) then
     if g_server ~= nil then
       g_server:broadcastEvent(SetSmartCruiseControlModeEvent.new(vehicle, state), nil, nil, vehicle)
     else
