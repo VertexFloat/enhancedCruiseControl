@@ -7,7 +7,7 @@ assignees:
 body:
 - type: markdown
   attributes:
-    value: Please make sure to [search for existing issues](https://github.com/VertexFloat/MOD_REPO/issues) before filing a new one!
+    value: Please make sure to [search for existing issues](https://github.com/VertexFloat/enhancedCruiseControl/issues) before filing a new one!
 
 - type: dropdown
   id: version
