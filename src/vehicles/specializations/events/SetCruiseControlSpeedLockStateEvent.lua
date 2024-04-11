@@ -45,7 +45,7 @@ function SetCruiseControlSpeedLockStateEvent:run(connection)
 end
 
 function SetCruiseControlSpeedLockStateEvent.sendEvent(vehicle, state, noEventSend)
-  if noEventSend == nil or noEventSend == false then
+  if vehicle.spec_enhancedCruiseControl.isCruiseControlSpeedLockActive ~= state and (noEventSend == nil or noEventSend == false) then
     if g_server ~= nil then
       g_server:broadcastEvent(SetCruiseControlSpeedLockStateEvent.new(vehicle, state), nil, nil, vehicle)
     else

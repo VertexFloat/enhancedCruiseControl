@@ -3,6 +3,7 @@
 -- @filename: EnhancedCruiseControl.lua
 
 EnhancedCruiseControl = {
+  SEND_NUM_BITS = 3,
   SMART_CRUISE_CONTROL_MODE = {
     AUTO = 1,
     FRONT = 2,
@@ -49,9 +50,11 @@ end
 
 function EnhancedCruiseControl.registerEventListeners(vehicleType)
   SpecializationUtil.registerEventListener(vehicleType, "onLoad", EnhancedCruiseControl)
+  SpecializationUtil.registerEventListener(vehicleType, "onPostLoad", EnhancedCruiseControl)
+  SpecializationUtil.registerEventListener(vehicleType, "onReadStream", EnhancedCruiseControl)
+  SpecializationUtil.registerEventListener(vehicleType, "onWriteStream", EnhancedCruiseControl)
   SpecializationUtil.registerEventListener(vehicleType, "onUpdate", EnhancedCruiseControl)
   SpecializationUtil.registerEventListener(vehicleType, "onUpdateTick", EnhancedCruiseControl)
-  SpecializationUtil.registerEventListener(vehicleType, "onPostLoad", EnhancedCruiseControl)
   SpecializationUtil.registerEventListener(vehicleType, "onRegisterActionEvents", EnhancedCruiseControl)
   SpecializationUtil.registerEventListener(vehicleType, "onDraw", EnhancedCruiseControl)
   SpecializationUtil.registerEventListener(vehicleType, "saveToXMLFile", EnhancedCruiseControl)
@@ -95,13 +98,35 @@ function EnhancedCruiseControl:onPostLoad(savegame)
 
     self:setSmartCruiseControlMode(state, true)
 
-    state = savegame.xmlFile:getValue(key .. "#isCruiseControlSpeedLockActive", spec.isCruiseControlSpeedLockActive)
-
-    self:setIsCruiseControlSpeedLockActive(state, true)
-
     state = savegame.xmlFile:getValue(key .. "#isCruiseControlLockActive", spec.isCruiseControlLockActive)
 
     self:setIsCruiseControlLockActive(state, true)
+
+    state = savegame.xmlFile:getValue(key .. "#isCruiseControlSpeedLockActive", spec.isCruiseControlSpeedLockActive)
+
+    self:setIsCruiseControlSpeedLockActive(state, true)
+  end
+end
+
+function EnhancedCruiseControl:onReadStream(streamId, connection)
+  if connection:getIsServer() then
+    local spec = self.spec_enhancedCruiseControl
+    local isLockActive = streamReadBool(streamId)
+    local isSpeedLockActive = streamReadBool(streamId)
+
+    self:setIsCruiseControlLockActive(isLockActive, true)
+    self:setIsCruiseControlSpeedLockActive(isSpeedLockActive, true)
+    self:setSmartCruiseControlMode(streamReadUIntN(streamId, EnhancedCruiseControl.SEND_NUM_BITS), true)
+  end
+end
+
+function EnhancedCruiseControl:onWriteStream(streamId, connection)
+  if not connection:getIsServer() then
+    local spec = self.spec_enhancedCruiseControl
+
+    streamWriteBool(streamId, spec.isCruiseControlLockActive)
+    streamWriteBool(streamId, spec.isCruiseControlSpeedLockActive)
+    streamWriteUIntN(streamId, spec.currentSmartCruiseControlMode, EnhancedCruiseControl.SEND_NUM_BITS)
   end
 end
 
