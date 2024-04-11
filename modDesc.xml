@@ -28,22 +28,20 @@ Back: Adjusts the speed to the vehicle behind you.
 Left: Adjusts the speed to the vehicle on the left side.
 Right: Adjusts the speed to the vehicle on the right side.
 
-Next/previous smart cruise control mode - "left ctrl + 5/6" keys (default)
+Next/previous smart cruise control mode - key combination "left ctrl + 5/6" keys (default)
 
 For more information, full changelog, help or to report a bug, please visit <a href="https://github.com/VertexFloat/enhancedCruiseControl">GitHub</a>.]]></en>
     <de><![CDATA[Dank dieser Modifikation erhält der Tempomat im Spiel zusätzliche Funktionen, darunter Tempomatsperre, Tempomat-Geschwindigkeitssperre und intelligenter Tempomat.
 
 Tempomatsperre – Mit dieser Funktion können Sie den Tempomat aktivieren und auch nach dem Verlassen des Fahrzeugs mit der eingestellten Geschwindigkeit weiterfahren. Es ist jedoch besondere Vorsicht geboten. In den Einstellungen können Sie einstellen, ob diese Funktion nur auf Feldern funktionieren soll oder nicht.
 
-Tempomatsperre aktivieren/deaktivieren - Tastenkombination „linke Strg + 4“ (Standard)
+Tempomatsperre aktivieren/deaktivieren - Tastenkombination "linke Strg + 4" (Standard)
 
 Tempomat-Geschwindigkeitssperre – Diese Option sperrt die Höchstgeschwindigkeit des Fahrzeugs auf den am Tempomat eingestellten Wert.
 
-Tempomat-Geschwindigkeitssperre aktivieren/deaktivieren - Tastenkombination „linke Strg + 7“ (Standard)
+Tempomat-Geschwindigkeitssperre aktivieren/deaktivieren - Tastenkombination "linke Strg + 7" (Standard)
 
 Intelligente Geschwindigkeitsregelung – Abhängig vom gewählten Modus passt der Tempomat die Höchstgeschwindigkeit des Fahrzeugs im Verhältnis zu anderen Fahrzeugen an.
-
-Nächster/vorheriger Intelligente Geschwindigkeitsregelung Modus – Tasten „linke Strg + 5/6“ (Standard)
 
 Zu den Modi gehören:
 Automatisch: Passt die Geschwindigkeit an das Fahrzeug an, das Ihnen am nächsten ist.
@@ -51,6 +49,8 @@ Vorne: Passt die Geschwindigkeit an das Fahrzeug vor Ihnen an.
 Hinten: Passt die Geschwindigkeit an das Fahrzeug hinter Ihnen an.
 Links: Passt die Geschwindigkeit an das Fahrzeug auf der linken Seite an.
 Rechts: Passt die Geschwindigkeit an das Fahrzeug auf der rechten Seite an.
+
+Nächster/vorheriger Intelligente Geschwindigkeitsregelung Modus – Tastenkombination "linke Strg + 5/6" (Standard)
 
 Weitere Informationen, ein vollständiges Änderungsprotokoll, Hilfe oder die Möglichkeit, einen Fehler zu melden, finden Sie unter <a href="https://github.com/VertexFloat/enhancedCruiseControl">GitHub</a>.]]></de>
     <fr><![CDATA[Grâce à cette modification, le régulateur de vitesse du jeu bénéficie de fonctionnalités supplémentaires, notamment le verrouillage du régulateur de vitesse, le verrouillage de la vitesse du régulateur de vitesse et le régulateur de vitesse intelligent.
@@ -72,7 +72,7 @@ Retour: adapte la vitesse au véhicule qui vous suit.
 Gauche: ajuste la vitesse au véhicule du côté gauche.
 Droite: ajuste la vitesse au véhicule du côté droit.
 
-Mode régulateur de vitesse intelligent suivant/précédent - touches « ctrl gauche + 5/6 » (par défaut)
+Mode régulateur de vitesse intelligent suivant/précédent - combinaison de touches "ctrl gauche + 5/6" (par défaut)
 
 Pour plus d'informations, le journal des modifications complet, de l'aide ou pour signaler un bug, veuillez visiter <a href="https://github.com/VertexFloat/enhancedCruiseControl">GitHub</a>.]]></fr>
     <pl><![CDATA[Dzięki tej modyfikacji, tempomat w grze zyskuje dodatkowe funkcje, w tym blokadę tempomatu, blokadę prędkości tempomatu oraz inteligentny tempomat.
@@ -94,7 +94,7 @@ Tył: Dostosowuje prędkość do pojazdu znajdującego się za.
 Lewo: Dostosowuje prędkość do pojazdu znajdującego się po lewej stronie.
 Prawo: Dostosowuje prędkość do pojazdu znajdującego się po prawej stronie.
 
-Następny/poprzedni tryb inteligentnego tempomatu - klawisze „lewy ctrl + 5/6” (domyślnie)
+Następny/poprzedni tryb inteligentnego tempomatu - kombinacja klawiszy "lewy ctrl + 5/6" (domyślnie)
 
 Po więcej informacji, pełny dziennik zmian, pomoc lub zgłoszenie błędu, odwiedź stronę <a href="https://github.com/VertexFloat/enhancedCruiseControl">GitHub</a>.]]></pl>
   </description>
