@@ -68,7 +68,7 @@ Modes include:
 - Left: Adjusts the speed to the vehicle on the left side.
 - Right: Adjusts the speed to the vehicle on the right side.
 
-Next/previous smart cruise control mode - "left ctrl + 5/6" keys (default)
+Next/previous smart cruise control mode - key combination "left ctrl + 5/6" (default)
 
 <p align="right">&#x2191 <a href="#top">back to top</a></p>
 
