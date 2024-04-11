@@ -62,11 +62,11 @@ Activating/deactivating cruise control speed lock - key combination "left ctrl +
 Smart Cruise Control - Depending on the selected mode, the cruise control adjusts the maximum speed of the vehicle in relation to other vehicles.
 
 Modes include:
-Auto: Adjusts the speed to the vehicle closest to you.
-Front: Adjusts the speed to the vehicle in front of you.
-Back: Adjusts the speed to the vehicle behind you.
-Left: Adjusts the speed to the vehicle on the left side.
-Right: Adjusts the speed to the vehicle on the right side.
+- Auto: Adjusts the speed to the vehicle closest to you.
+- Front: Adjusts the speed to the vehicle in front of you.
+- Back: Adjusts the speed to the vehicle behind you.
+- Left: Adjusts the speed to the vehicle on the left side.
+- Right: Adjusts the speed to the vehicle on the right side.
 
 Next/previous smart cruise control mode - "left ctrl + 5/6" keys (default)
 
