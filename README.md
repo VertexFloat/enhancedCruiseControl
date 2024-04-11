@@ -123,7 +123,6 @@ Distributed under the GPL-3.0 license. See [LICENSE](https://github.com/VertexFl
 
 * [Choose an Open Source License](https://choosealicense.com)
 * [Best README Template](https://github.com/othneildrew/Best-README-Template)
-* [UIcons by Flaticon](https://www.flaticon.com/uicons)
 * [Speedometer icons created by Smashicons - Flaticon](https://www.flaticon.com/free-icons/speedometer)
 
 <p align="right">&#x2191 <a href="#top">back to top</a></p>
