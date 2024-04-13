@@ -146,15 +146,15 @@ function EnhancedCruiseControl:onRegisterActionEvents(isActiveForInput, isActive
 
     if self:getIsActiveForInput(true, true) and self:getIsEntered() and not self:getIsAIActive() then
       local _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.TOGGLE_CRUISE_CONTROL_LOCK, self, EnhancedCruiseControl.actionEventToggleCruiseControlLock, false, true, false, true, nil)
-      g_inputBinding:setActionEventTextPriority(actionEventId, GS_PRIO_LOW)
+      g_inputBinding:setActionEventTextPriority(actionEventId, GS_PRIO_NORMAL)
       g_inputBinding:setActionEventText(actionEventId, spec.isCruiseControlLockActive and spec.cruiseControlLockTexts.neg or spec.cruiseControlLockTexts.pos)
 
       _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.TOGGLE_CRUISE_CONTROL_SPEED_LOCK, self, EnhancedCruiseControl.actionEventToggleCruiseControlSpeedLock, false, true, false, true, nil)
-      g_inputBinding:setActionEventTextPriority(actionEventId, GS_PRIO_LOW)
+      g_inputBinding:setActionEventTextPriority(actionEventId, GS_PRIO_NORMAL)
       g_inputBinding:setActionEventText(actionEventId, spec.isCruiseControlSpeedLockActive and spec.cruiseControlSpeedLockTexts.neg or spec.cruiseControlSpeedLockTexts.pos)
 
       _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.TOGGLE_SMART_CRUISE_CONTROL_MODE, self, EnhancedCruiseControl.actionEventToggleSmartCruiseControlMode, false, true, false, true, nil)
-      g_inputBinding:setActionEventTextPriority(actionEventId, GS_PRIO_LOW)
+      g_inputBinding:setActionEventTextPriority(actionEventId, GS_PRIO_NORMAL)
       g_inputBinding:setActionEventText(actionEventId, spec.currentSmartCruiseControlModeText:format(spec.smartCruiseControlModeTexts[spec.currentSmartCruiseControlMode]))
     end
   end
