@@ -51,15 +51,15 @@
 
 Thanks to this modification, the cruise control in the game gains additional features, including cruise control lock, cruise control speed lock, and smart cruise control.
 
-Cruise Control Lock - This function allows you to activate the cruise control and continue driving at the set speed even after leaving the vehicle. However, special caution should be exercised. In the settings, you can adjust whether this function should only work on fields or not.
+**Cruise Control Lock** - This function allows you to activate the cruise control and continue driving at the set speed even after leaving the vehicle. However, special caution should be exercised. In the settings, you can adjust whether this function should only work on fields or not.
 
 Activating/deactivating cruise control lock - key combination "left ctrl + 4" (default)
 
-Cruise Control Speed Lock - This option locks the vehicle's maximum speed to the value set on the cruise control.
+**Cruise Control Speed Lock** - This option locks the vehicle's maximum speed to the value set on the cruise control.
 
 Activating/deactivating cruise control speed lock - key combination "left ctrl + 7" (default)
 
-Smart Cruise Control - Depending on the selected mode, the cruise control adjusts the maximum speed of the vehicle in relation to other vehicles.
+**Smart Cruise Control** - Depending on the selected mode, the cruise control adjusts the maximum speed of the vehicle in relation to other vehicles.
 
 Modes include:
 - Auto: Adjusts the speed to the vehicle closest to you.
