@@ -376,7 +376,7 @@ function EnhancedCruiseControl:getSpeedLimit(superFunc, onlyIfWorking)
   local spec = self.spec_enhancedCruiseControl
   local limit, doCheckSpeedLimit = superFunc(self, onlyIfWorking)
 
-  if spec.isCruiseControlSpeedLockActive then
+  if spec and spec.isCruiseControlSpeedLockActive then
     limit = math.min(self:getCruiseControlSpeed(), limit)
   end
 
