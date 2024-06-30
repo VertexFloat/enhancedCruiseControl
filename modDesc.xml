@@ -32,7 +32,7 @@ Next/previous smart cruise control mode - key combination "left ctrl + 5/6" (def
 
 Changelog (1.0.0.1):
 
-- fixed self-propelled sprayers dont load in store
+- fixed self-propelled sprayers don't load in store
 
 For more information, full changelog, help or to report a bug, please visit <a href="https://github.com/VertexFloat/enhancedCruiseControl">GitHub</a>.]]></en>
     <de><![CDATA[Dank dieser Modifikation erhält der Tempomat im Spiel zusätzliche Funktionen, darunter Tempomatsperre, Tempomat-Geschwindigkeitssperre und intelligenter Tempomat.
