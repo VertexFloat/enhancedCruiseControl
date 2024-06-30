@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="79">
+<modDesc descVersion="80">
   <author>VertexFloat</author>
-  <version>1.0.0.0</version>
+  <version>1.0.0.1</version>
   <title>
     <en>Enhanced Cruise Control</en>
     <de>Verbesserte Geschwindigkeitsregelung</de>
@@ -30,6 +30,10 @@ Right: Adjusts the speed to the vehicle on the right side.
 
 Next/previous smart cruise control mode - key combination "left ctrl + 5/6" (default)
 
+Changelog (1.0.0.1):
+
+- fixed self-propelled sprayers don't load in store
+
 For more information, full changelog, help or to report a bug, please visit <a href="https://github.com/VertexFloat/enhancedCruiseControl">GitHub</a>.]]></en>
     <de><![CDATA[Dank dieser Modifikation erhält der Tempomat im Spiel zusätzliche Funktionen, darunter Tempomatsperre, Tempomat-Geschwindigkeitssperre und intelligenter Tempomat.
 
@@ -51,6 +55,10 @@ Links: Passt die Geschwindigkeit an das Fahrzeug auf der linken Seite an.
 Rechts: Passt die Geschwindigkeit an das Fahrzeug auf der rechten Seite an.
 
 Nächster/vorheriger Intelligente Geschwindigkeitsregelung Modus – Tastenkombination "linke Strg + 5/6" (Standard)
+
+Änderungsprotokoll (1.0.0.1):
+
+- Problem behoben, bei dem selbstfahrende Sprühgeräte nicht im Store geladen wurden
 
 Weitere Informationen, ein vollständiges Änderungsprotokoll, Hilfe oder die Möglichkeit, einen Fehler zu melden, finden Sie unter <a href="https://github.com/VertexFloat/enhancedCruiseControl">GitHub</a>.]]></de>
     <fr><![CDATA[Grâce à cette modification, le régulateur de vitesse du jeu bénéficie de fonctionnalités supplémentaires, notamment le verrouillage du régulateur de vitesse, le verrouillage de la vitesse du régulateur de vitesse et le régulateur de vitesse intelligent.
@@ -74,6 +82,10 @@ Droite: ajuste la vitesse au véhicule du côté droit.
 
 Mode régulateur de vitesse intelligent suivant/précédent - combinaison de touches "ctrl gauche + 5/6" (par défaut)
 
+Journal des modifications (1.0.0.1):
+
+- les pulvérisateurs automoteurs fixes ne chargent pas en magasin
+
 Pour plus d'informations, le journal des modifications complet, de l'aide ou pour signaler un bug, veuillez visiter <a href="https://github.com/VertexFloat/enhancedCruiseControl">GitHub</a>.]]></fr>
     <pl><![CDATA[Dzięki tej modyfikacji, tempomat w grze zyskuje dodatkowe funkcje, w tym blokadę tempomatu, blokadę prędkości tempomatu oraz inteligentny tempomat.
 
@@ -95,6 +107,10 @@ Lewo: Dostosowuje prędkość do pojazdu znajdującego się po lewej stronie.
 Prawo: Dostosowuje prędkość do pojazdu znajdującego się po prawej stronie.
 
 Następny/poprzedni tryb inteligentnego tempomatu - kombinacja klawiszy "lewy ctrl + 5/6" (domyślnie)
+
+Dziennik zmian (1.0.0.1):
+
+- naprawiono błąd powodujący nie wczytywanie się opryskiwaczy samobieżnych w sklepie
 
 Po więcej informacji, pełny dziennik zmian, pomoc lub zgłoszenie błędu, odwiedź stronę <a href="https://github.com/VertexFloat/enhancedCruiseControl">GitHub</a>.]]></pl>
   </description>

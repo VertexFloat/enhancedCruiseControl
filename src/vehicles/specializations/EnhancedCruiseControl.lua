@@ -1,6 +1,11 @@
--- @author: 4c65736975, © All Rights Reserved
--- @version: 1.0.0.0, 06|04|2024
--- @filename: EnhancedCruiseControl.lua
+-- EnhancedCruiseControl.lua
+--
+-- author: 4c65736975
+--
+-- Copyright (c) 2024 VertexFloat. All Rights Reserved.
+--
+-- This source code is licensed under the GPL-3.0 license found in the
+-- LICENSE file in the root directory of this source tree.
 
 EnhancedCruiseControl = {
   SEND_NUM_BITS = 3,
@@ -376,7 +381,7 @@ function EnhancedCruiseControl:getSpeedLimit(superFunc, onlyIfWorking)
   local spec = self.spec_enhancedCruiseControl
   local limit, doCheckSpeedLimit = superFunc(self, onlyIfWorking)
 
-  if spec.isCruiseControlSpeedLockActive then
+  if spec and spec.isCruiseControlSpeedLockActive then
     limit = math.min(self:getCruiseControlSpeed(), limit)
   end
 
