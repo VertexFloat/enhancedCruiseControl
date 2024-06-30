@@ -13,4 +13,4 @@ Features:
 
 Fix:
 
-- fixed self-propelled sprayers dont load in store
+- fixed self-propelled sprayers don't load in store
