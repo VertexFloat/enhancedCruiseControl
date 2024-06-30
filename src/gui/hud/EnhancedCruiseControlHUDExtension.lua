@@ -1,6 +1,11 @@
--- @author: 4c65736975, © All Rights Reserved
--- @version: 1.0.0.0, 06|04|2024
--- @filename: EnhancedCruiseControlHUDExtension.lua
+-- EnhancedCruiseControlHUDExtension.lua
+--
+-- author: 4c65736975
+--
+-- Copyright (c) 2024 VertexFloat. All Rights Reserved.
+--
+-- This source code is licensed under the GPL-3.0 license found in the
+-- LICENSE file in the root directory of this source tree.
 
 local modDirectory = g_currentModDirectory
 
